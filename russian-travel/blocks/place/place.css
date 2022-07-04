@@ -1,0 +1,25 @@
+.place {
+    display: grid;
+    grid-template: auto 1fr/1fr 1fr;
+    grid-gap: 48px 40px;
+    margin: 0 0 80px;
+}
+
+.place:last-child {
+    margin: 0;
+}
+
+@media (max-width:768px) {
+    .place {
+        margin: 0 0 73px;
+        grid-gap: 6vw 5vw;
+    }
+}
+
+@media (max-width:425px) {
+    .place {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 64px;
+    }
+}
